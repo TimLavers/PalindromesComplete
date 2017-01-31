@@ -14,7 +14,8 @@ class TermTest {
         Assert.assertFalse(cat == dog)
     }
 
-    @Test fun permutationsWhenEmpty() {
+    @Test
+    fun permutationsWhenEmpty() {
         val empty = Term("")
         val permutations = empty.permutations()
         Assert.assertEquals(1, permutations.size)
