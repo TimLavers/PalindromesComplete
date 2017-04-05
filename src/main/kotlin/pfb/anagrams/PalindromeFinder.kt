@@ -8,7 +8,7 @@ import java.nio.file.Paths
 fun main(args: Array<String>) {
     //Create a dictionary from "english.txt" in resources/books
     val path = Paths.get("src/main/resources/books/english.txt")
-    val dictionary = FileBasedDictionary(path)
+    val dictionary = Dictionary(path)
     //For each string in the dictionary...
     for (str in dictionary.words) {
         //...create a Term from the string

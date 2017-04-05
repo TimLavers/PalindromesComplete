@@ -8,7 +8,7 @@ import java.nio.file.Paths
 fun main(args: Array<String>) {
     //Create a dictionary from "english.txt" in resources/books
     val path = Paths.get("src/main/resources/books/english.txt")
-    val dictionary = FileBasedDictionary(path)
+    val dictionary = Dictionary(path)
     //Create a Term from our initial English word.
     val word = Term("regal")
     //Get all rearrangements of the letters in this word.

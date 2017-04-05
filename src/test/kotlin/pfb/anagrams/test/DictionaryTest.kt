@@ -2,14 +2,14 @@ package pfb.anagrams.test
 
 import org.junit.Assert
 import org.junit.Test
-import pfb.anagrams.FileBasedDictionary
+import pfb.anagrams.Dictionary
 import java.nio.file.Paths
 
-class FileBasedDictionaryTest {
+class DictionaryTest {
     @Test
     fun containsTest() {
         val path = Paths.get("src/test/resources/books/FiveWords.txt")
-        val dictionary = FileBasedDictionary(path)
+        val dictionary = Dictionary(path)
         Assert.assertTrue(dictionary.contains("aardvark"))
         Assert.assertTrue(dictionary.contains("bat"))
         Assert.assertTrue(dictionary.contains("cat"))
